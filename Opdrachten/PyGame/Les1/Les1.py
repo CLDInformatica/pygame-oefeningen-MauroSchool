@@ -16,8 +16,14 @@ pygame.display.set_caption('Eerste game!')
 clock = pygame.time.Clock()
 running = True
 
-surface = pygame.Surface((100, 100))
+surface = pygame.Surface((800, 400))
 surface.fill("blue")
+
+player = pygame.Surface((25, 25))
+player.fill("yellow")
+
+paal1t = pygame.Surface((25, 25))
+paal1t.fill("green2")
 
 while running:
 
@@ -26,6 +32,6 @@ while running:
       running = False
 
   screen.blit(surface, (0, 0))
-  
+  screen.blit(player, (50, 200))
   pygame.display.update()
   clock.tick(60)
