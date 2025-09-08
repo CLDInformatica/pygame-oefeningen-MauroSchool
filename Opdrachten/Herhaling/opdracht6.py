@@ -11,3 +11,19 @@
 # Voer hierna de functie uit met verschillende inputs en bekijk de resultaten.
 # Let op: Het is verplicht om een functie te gebruiken!
 
+def rekenmachine(getal1, getal2, operatie):
+    if operatie == "+":
+        print(getal1 + getal2)
+    elif operatie == "-":
+        print(getal1 - getal2)
+    elif operatie == "*":
+        print(getal1 * getal2)
+    elif operatie == "/":
+        print(getal1 / getal2)
+        
+
+getal1 = int(input("geef een getal"))
+getal2 = int(input("geef een 2e getal"))
+operatie = input("operatie")
+
+print(rekenmachine(getal1, getal2, operatie))

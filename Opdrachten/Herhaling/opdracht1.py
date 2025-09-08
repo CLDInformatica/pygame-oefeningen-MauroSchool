@@ -11,5 +11,19 @@ Als het cijfer onder de 3 is, print dan `Wat ging hier mis?`.
 
 Als je niet meer weet hoe alles werkt, zoek het dan even op!
 '''
-
-toetscijfer = float(input("Geef een cijfer:"))
+while True:
+    toetscijfer = float(input("Geef een cijfer:"))
+    if toetscijfer > 10 or toetscijfer <= 1:
+        print("dat is geen geldig cijfer!")
+        print("probeer opnieuw")
+    else:
+        print("dankjewel!")
+        if toetscijfer > 8:
+            print("Wow, dat is heel hoog")
+        elif toetscijfer <=8 and toetscijfer >= 5.5:
+            print("Prima, een voldoende!")
+        elif toetscijfer < 5.5 and toetscijfer >= 3:
+            print("Kon slechter maar mag wel beter de volgende keer...")
+        else:
+            print("Wat ging hier mis?")
+        break
